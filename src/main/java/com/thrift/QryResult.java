@@ -153,6 +153,7 @@ public class QryResult implements org.apache.thrift.TBase<QryResult, QryResult._
     return new QryResult(this);
   }
 
+  @Override
   public void clear() {
     setCodeIsSet(false);
     this.code = 0;
@@ -305,6 +306,7 @@ public class QryResult implements org.apache.thrift.TBase<QryResult, QryResult._
     return list.hashCode();
   }
 
+  @Override
   public int compareTo(QryResult other) {
     if (!getClass().equals(other.getClass())) {
       return getClass().getName().compareTo(other.getClass().getName());
@@ -461,6 +463,7 @@ public class QryResult implements org.apache.thrift.TBase<QryResult, QryResult._
 
   private static class QryResultTupleScheme extends TupleScheme<QryResult> {
 
+    @Override
     public void write(org.apache.thrift.protocol.TProtocol prot, QryResult struct) throws org.apache.thrift.TException {
       TTupleProtocol oprot = (TTupleProtocol) prot;
       BitSet optionals = new BitSet();
@@ -479,6 +482,7 @@ public class QryResult implements org.apache.thrift.TBase<QryResult, QryResult._
       }
     }
 
+    @Override
     public void read(org.apache.thrift.protocol.TProtocol prot, QryResult struct) throws org.apache.thrift.TException {
       TTupleProtocol iprot = (TTupleProtocol) prot;
       BitSet incoming = iprot.readBitSet(2);
